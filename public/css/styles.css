@@ -1,0 +1,98 @@
+/* styles.css */
+
+
+/* Style the Header element */
+/* h1 {
+    color: grey;
+} */
+
+/* Style the Image element */
+/* img {
+    width: 250px;
+} */
+
+/* Style the Body element <body> */
+body {
+    /* entire site content color in hex */
+    color: #333333;
+    font-family: arial;
+    /* center site content */
+    max-width: 650px;
+    /* distribute space on left and right side of the body */
+    /* top\bottom = 0; equal left\right = auto */
+    margin: 0 auto;
+    /* above\below = 0; equal left\right = 16px */
+    padding: 0, 16px;
+
+    /* expand the content to force the footer to be sticky to the bottom of the webpage */
+    display: flex;
+    /* keeps things lined up in ceter */
+    flex-direction: column;
+    /* use full page */
+    min-height: 100vh;
+}
+
+/* Style the child Div element <div> class="main-content" to use flex box  */
+.main-content {
+    /* take up all left-over space on the webpage and force footer down */
+    flex-grow: 1;
+}
+
+/* Style the Footer element <footer> */
+footer {
+    /* padding adds space inside the box around the content*/
+    /* margin adds space outside the box */
+    /* background-color: blue; */
+    /* margin: 16px; */
+    /* padding with single value is applied to all sides */
+    /* padding: 16px; */
+    color: #888888;
+    /* width = 1px; border = solid; text color = # */
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    /* above\below = 16px; left\right = 0 */
+    padding: 16px 0;
+}
+
+/* Style the Header element <header> */
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+/* Style the Header element <h1> */
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+/* Style ONLY the Header element <header>'s child Anchor elements <a> */
+/* use a selector to target only the header anchor links */
+header a {
+    color: #888888;
+    /* spread the anchor links apart */
+    margin-right: 16px;
+    /* remove the default underline in the link */
+    text-decoration: none;
+}
+
+/* Style the Image element <img> using a class - doc.portrait */
+.portrait {
+    width: 250px;
+}
+
+/* Style the Input element <input>: */
+input {
+    /* width=1px; border type=solid; color=light-grey */
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+/* Style the Button element <button>: */
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{{!-- error404.hbs --}}
+
+<html>
+    <head>
+        <title>Error 404</title>
+        {{!-- add weather icon --}}
+        <link rel="icon" href="/img/weather.png">
+        <!-- relative path use -->
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    
+    <body>
+        <div class="main-content">
+            {{!-- hbs partial header.hbs --}}
+            {{>header}}
+            <p>{{errorMessage}}</p>
+        </div>
+
+        {{!-- hbs partial footer.hbs --}}
+        {{>footer}}
+    </body>
+</html>

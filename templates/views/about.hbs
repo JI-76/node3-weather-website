@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{{!-- index.hbs --}}
+
+<html>
+    <head>
+        <title>About</title>
+        {{!-- add weather icon --}}
+        <link rel="icon" href="/img/weather.png">
+        <!-- relative path use -->
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+    <body>
+        <div class="main-content">
+            {{!-- hbs partial header.hbs --}}
+            {{>header}}
+            <img class="portrait" src="/img/robot.png">
+            <!-- <img src="./img/myAvatar.png"> -->
+        </div>
+
+        {{!-- hbs partial footer.hbs --}}
+        {{>footer}}
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{{!-- index.hbs --}}
+
+<html>
+    <head>
+        <title>Weather</title>
+        {{!-- add weather icon --}}
+        <link rel="icon" href="/img/weather.png">
+        <!-- relative path use -->
+        <link rel="stylesheet" href="/css/styles.css">
+        {{!-- <script src="/js/app.js"></script> --}}
+    </head>
+    
+    <body>
+        <div class="main-content">
+            {{!-- hbs partial header.hbs --}}
+            {{>header}}
+
+            <p>Use this site to obtain your weather forecast.</p>
+
+            <form>
+                <input placeholder="Location">
+                <button>Search</button>
+            </form>
+
+            <p id="message-1"></P>            
+            <p id="message-2"></p>
+        </div>
+        
+        {{!-- hbs partial footer.hbs --}}
+        {{>footer}}
+
+        {{!-- moved from Head element <head> so it has access to all HTML elements on the page --}}
+        <script src="/js/app.js"></script>
+    </body>
+</html>
