@@ -15,6 +15,10 @@ const hbs = require('hbs');
 // create Express app
 const app = express();
 
+// add a value from that Heroku will supply in an OS-level Environment variable
+// with a default value of 3000 if the Environment value is not supplied
+const port = process.env.PORT || 3000;
+
 // Define paths for Express config
 const publicDirectoryPath = path.join(__dirname, '../public');
 // customize the location and name of the subdirectory used by the Handlerbars templating engine (hbs) views
@@ -131,6 +135,7 @@ app.get('*', (req, res) => {
 
 
 // start express server to listen on "Dev" port
-app.listen(3000, () => {
-    console.log('Server is up on port 3000.');
+// app.listen(3000, () => {
+app.listen(port, () => {
+    console.log('Server is up on port ' + port);
 });
