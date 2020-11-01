@@ -19,7 +19,7 @@ const {weatherDescription, currentTemp, feelsLike, currentPrecip} = forecast = (
             callback('Unable to find location coordinates', undefined);
         } else {
             // callback(undefined, response.body.current.weather_descriptions[0] + '. It is currently ' + response.body.current.temperature + 'F degrees out. It feels like ' + response.body.current.feelslike + ' degrees out. There is a ' + response.body.current.precip + '% chance of rain.');
-            callback(undefined, body.current.weather_descriptions[0] + '. It is currently ' + body.current.temperature + 'F degrees out. It feels like ' + body.current.feelslike + ' degrees out. There is a ' + body.current.precip + '% chance of rain.');
+            callback(undefined, 'Forecast: ' + body.current.weather_descriptions[0] + '. It is currently ' + body.current.temperature + 'F degrees out and the humidity is at ' + body.current.humidity +'%. It feels like ' + body.current.feelslike + ' degrees out. The current UV Index is ' + body.current.uv_index + '. The barometric pressure is ' + body.current.pressure + ' millibars. There is a ' + body.current.precip + '% chance of rain.');
             // callback(undefined, {
             //     weatherDescription: body.current.weather_descriptions[0],
             //     currentTemp: body.current.temperature,
